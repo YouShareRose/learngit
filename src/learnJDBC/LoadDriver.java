@@ -38,12 +38,9 @@ public class LoadDriver {
 			if (stmt.execute("SELECT * FROM test4login")) {
 				rs = stmt.getResultSet();  
 				while(rs.next()){
-					System.out.print(rs.toString()+"\n"+
-							rs.getObject("name")+"\n"+
-							rs.getObject("password"));
+					System.out.print(rs.getObject("name")+"\n"+
+									 rs.getObject("password"));
 				}
-				
-				
 			}
 			// Now do something with the ResultSet .... 
 		} catch (SQLException ex) {    
