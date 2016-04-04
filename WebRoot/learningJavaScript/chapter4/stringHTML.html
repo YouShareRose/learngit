@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>stringHTML.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+    	function stringHTML() {
+    		var someString = new String("This is the test string");
+        	
+        	document.writeln(someString.big() + "<br />");
+        	document.writeln(someString.blink() + "<br />");
+        	document.writeln(someString.sup() + "<br />");
+        	document.writeln(someString.sub() + "<br />");
+        	document.writeln(someString.strike() + "<br />");
+        	document.writeln(someString.bold() + "<br />");
+        	document.writeln(someString.italics() + "<br />");
+        	document.writeln(someString.link('http://www.baidu.com') + "<br />");
+    	}
+    	
+    </script>
+
+  </head>
+  
+  <body onload="stringHTML()">
+    This is my HTML page. <br>
+  </body>
+</html>

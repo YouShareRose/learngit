@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>stringHTML.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+    	function splitString() {
+    		var inputString = new 
+    		String('firstName=Shelley,lastName=Powers,state=Missouri,statement="This is a test, of split"');
+    		var arrayTokens = inputString.split(',',3);
+    		
+    		// 按逗号分割字符串
+    		for (var i = 0; i < arrayTokens.length; i++) {
+    			document.writeln(arrayTokens[i] + "<br />");
+    			// now split on equals and write just value 
+    			var newTokens = arrayTokens[i].split('=');
+    			document.writeln(newTokens[1] + "<br /><br />");
+    		}
+    		
+    		var s = String.fromCharCode(345,99,99,76);
+    		document.writeln(s);
+    	}
+    </script>
+
+  </head>
+  
+  <body onload="splitString()">
+    This is my HTML page. <br>
+  </body>
+</html>
