@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BasicObject.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <script type="text/javascript">
+    	// var myName = "Shelley";
+    	// alert(myName.length);
+    	// alert(myName.strike());
+    	
+    	// var myName = new String("Shelley");
+    	// alert(myName.valueOf());
+    	
+    	function numbers() {
+    		var newNumber = new Number(34.8896);
+    		
+    		document.writeln(newNumber.toExponential(3) + "<br />");
+    		document.writeln(newNumber.toPrecision(3) + "<br />");
+    		document.writeln(newNumber.toFixed(6) + "<br />");
+    		
+    		var newValue = newNumber.valueOf();
+    		
+    		document.writeln(newValue.toString(2) + "<br />");
+    		document.writeln(newValue.toString(8) + "<br />");
+    		document.writeln(newValue.toString(10) + "<br />");
+    		document.writeln(newValue.toString(16) + "<br />");
+    	}
+    </script>
+
+  </head>
+  
+  <body onload="numbers()">
+    This is my HTML page. <br>
+  </body>
+</html>
